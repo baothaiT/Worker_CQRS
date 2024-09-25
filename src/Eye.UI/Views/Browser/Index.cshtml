@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Eye.Contract.Share.Models.ProfileModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<div class="btn-group" role="group" aria-label="Basic example">
+@*     <form id="startAll">
+        <button type="submit" class="btn btn-secondary">Start All</button>
+    </form>
+    <form id="closeAll">
+        <input type="hidden" name="user_id" value="1" />
+        <button type="submit" class="btn btn-secondary">Close All</button>
+    </form>
+    <form id="gridProfiles">
+        <input type="hidden" name="user_id" value="1" />
+        <button type="submit" class="btn btn-secondary">Grid All</button>
+    </form> *@
+    <form asp-controller="Browser" asp-action="Test">
+        <input type="hidden" name="user_id" value="1" />
+        <button type="submit" class="btn btn-secondary">Test</button>
+    </form>
+</div>
