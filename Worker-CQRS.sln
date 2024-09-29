@@ -5,21 +5,21 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{55DAE63D-FE98-43FA-A7E9-56FFE1D6350B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eye.Worker", "src\Eye.Worker\Eye.Worker.csproj", "{B5C03916-F9C8-4D3E-A319-D6253F9829B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eye.Worker", "src\Eye.Worker\Eye.Worker.csproj", "{B5C03916-F9C8-4D3E-A319-D6253F9829B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eye.Application", "src\Eye.Application\Eye.Application.csproj", "{E1C82EA3-D188-4370-AEFA-80915CD38A10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eye.Application", "src\Eye.Application\Eye.Application.csproj", "{E1C82EA3-D188-4370-AEFA-80915CD38A10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eye.Contract", "src\Eye.Contract\Eye.Contract.csproj", "{51035056-450D-4F0C-88EC-8E3CA90FF7C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eye.Contract", "src\Eye.Contract\Eye.Contract.csproj", "{51035056-450D-4F0C-88EC-8E3CA90FF7C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eye.Domain", "src\Eye.Domain\Eye.Domain.csproj", "{A800B875-E4F9-4779-B56A-B9E5C99C3388}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eye.Domain", "src\Eye.Domain\Eye.Domain.csproj", "{A800B875-E4F9-4779-B56A-B9E5C99C3388}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eye.Infrastructure", "src\Eye.Infrastructure\Eye.Infrastructure.csproj", "{C49CA183-DEB4-4D00-B7F9-4183AF8CC9A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eye.Infrastructure", "src\Eye.Infrastructure\Eye.Infrastructure.csproj", "{C49CA183-DEB4-4D00-B7F9-4183AF8CC9A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eye.Infrastructure.MessageBus", "src\Eye.Infrastructure.MessageBus\Eye.Infrastructure.MessageBus.csproj", "{F7F8D697-F30D-459E-97F3-260C33E8D0B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eye.Infrastructure.MessageBus", "src\Eye.Infrastructure.MessageBus\Eye.Infrastructure.MessageBus.csproj", "{F7F8D697-F30D-459E-97F3-260C33E8D0B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eyye.Infrastructure.Mongo", "src\Eyye.Infrastructure.Mongo\Eyye.Infrastructure.Mongo.csproj", "{7F72D275-F357-4B6A-8E10-852C3AAE09D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eyye.Infrastructure.Mongo", "src\Eyye.Infrastructure.Mongo\Eyye.Infrastructure.Mongo.csproj", "{7F72D275-F357-4B6A-8E10-852C3AAE09D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eyey.Persistence", "src\Eyey.Persistence\Eyey.Persistence.csproj", "{49DBE941-5064-4AE9-AAE3-EF7A9C882068}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eyey.Persistence", "src\Eyey.Persistence\Eyey.Persistence.csproj", "{49DBE941-5064-4AE9-AAE3-EF7A9C882068}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{97B72690-E2DC-470F-9A45-405884116F8F}"
 EndProject
@@ -28,7 +28,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eye.UI", "src\Eye.UI\Eye.UI.csproj", "{C96C6641-3AB1-4411-A081-43484F3CDB48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eye.UI", "src\Eye.UI\Eye.UI.csproj", "{C96C6641-3AB1-4411-A081-43484F3CDB48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -2,6 +2,7 @@ using Eye.Worker;
 using Eye.Application.Services;
 using Eye.Application.SeleniumServices;
 using Eye.Application.Services.Interface;
+using Eye.Application.SeleniumServices.Interfaces;
 
 var builder = Host.CreateApplicationBuilder(args);
 
@@ -14,7 +15,9 @@ builder.Services.AddSingleton<IOutPutBehaviorBrowserService, BehaviorBrowserServ
 builder.Services.AddSingleton<IScriptAutoService, ScriptAutoService>();
 
 builder.Services.AddSingleton<IAccountService, AccountService>();
-builder.Services.AddSingleton<IProductService, ProductService>();
+builder.Services.AddSingleton<IProductClientService, ProductClientService>();
+builder.Services.AddSingleton<IProxyClientServce, ProxyClientServce>();
+builder.Services.AddSingleton<IProcessWorkerService, ProcessWorkerService>();
 
 builder.Services.AddHostedService<Worker>();
 

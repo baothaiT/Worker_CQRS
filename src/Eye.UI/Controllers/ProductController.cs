@@ -6,8 +6,8 @@ namespace Eye.UI.Controllers
     public class ProductController : Controller
     {
         private readonly ILogger<ProductController> _logger;
-        private readonly IProductService _productService;
-        public ProductController(ILogger<ProductController> logger, IProductService productService)
+        private readonly IProductClientService _productService;
+        public ProductController(ILogger<ProductController> logger, IProductClientService productService)
         {
             _logger = logger;
             _productService = productService;

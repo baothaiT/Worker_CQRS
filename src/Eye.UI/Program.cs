@@ -8,14 +8,14 @@ builder.Services.AddHttpClient();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 //builder.Services.AddTransient<IHttpClientService, HttpClientService>();
-builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IProductClientService, ProductClientService>();
 builder.Services.AddScoped<IAccountService, AccountService>();
 builder.Services.AddScoped<IAutoService, AutoService>();
 builder.Services.AddScoped<IBrowserService, BrowserService>();
 builder.Services.AddScoped<IInPutBehaviorBrowserService, BehaviorBrowserService>();
 builder.Services.AddScoped<IOutPutBehaviorBrowserService, BehaviorBrowserService>();
 builder.Services.AddScoped<IScriptAutoService, ScriptAutoService>();
-builder.Services.AddScoped<IProxyServce, ProxyServce>();
+builder.Services.AddScoped<IProxyClientServce, ProxyClientServce>();
 
 
 

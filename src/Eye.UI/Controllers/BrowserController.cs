@@ -9,46 +9,46 @@ namespace Eye.UI.Controllers
    public class BrowserController : Controller
    {
         private readonly IAutoService _autoService;
-        private readonly IProxyServce _proxyServce;
+        private readonly IProxyClientServce _proxyServce;
         private List<ProxyModel> _proxyModels;
 
-        public BrowserController(IAutoService autoService, IProxyServce proxyServce)
+        public BrowserController(IAutoService autoService, IProxyClientServce proxyServce)
         {
             _autoService = autoService;
             _proxyServce = proxyServce;
             _proxyModels = new List<ProxyModel>();
         }
-       // GET: BrowserController
-       public async Task<ActionResult> Index(string checkProxy, string ip, string user, string password)
-       {
-            ViewBag.CheckProxy = !String.IsNullOrEmpty(checkProxy)? checkProxy: "null";
-            ViewBag.Ip = !String.IsNullOrEmpty(ip) ? ip : "null";
-            ViewBag.User = !String.IsNullOrEmpty(user) ? user : "null";
-            ViewBag.Password = !String.IsNullOrEmpty(password) ? password : "null";
+        // GET: BrowserController
+        public async Task<ActionResult> Index(string checkProxy, string ip, string user, string password)
+        {
+            //     ViewBag.CheckProxy = !String.IsNullOrEmpty(checkProxy)? checkProxy: "null";
+            //     ViewBag.Ip = !String.IsNullOrEmpty(ip) ? ip : "null";
+            //     ViewBag.User = !String.IsNullOrEmpty(user) ? user : "null";
+            //     ViewBag.Password = !String.IsNullOrEmpty(password) ? password : "null";
 
-            string filePath = Path.Combine("Data", "proxies.txt"); // Assuming 'Data' folder is in the same directory as executable
-            List<ProxyModel> proxyModels = _proxyServce.ReadProxies(filePath);
+            //     string filePath = Path.Combine("Data", "proxies.txt"); // Assuming 'Data' folder is in the same directory as executable
+            //     List<ProxyModel> proxyModels = _proxyServce.ReadProxies(filePath);
 
-            for (int i = 0; i < proxyModels.Count; i++)
-            {
-                string proxyAddress = proxyModels[i].IP + ":" + proxyModels[i].Port;
-                string proxyUsername = proxyModels[i].Username; // Leave blank if no auth
-                string proxyPassword = proxyModels[i].Password; // Leave blank if no auth
-                string testUrl = "https://httpbin.org/ip";
-                bool isProxyWorking = await _proxyServce.IsProxyWorking(proxyAddress, proxyUsername, proxyPassword, testUrl);
-                if (isProxyWorking)
-                {
-                    proxyModels[i].CheckStatus = "Proxy is working.";
-                }
-                else
-                {
-                    proxyModels[i].CheckStatus = "Proxy is not working.";
-                }
-            }
+            //     for (int i = 0; i < proxyModels.Count; i++)
+            //     {
+            //         string proxyAddress = proxyModels[i].IP + ":" + proxyModels[i].Port;
+            //         string proxyUsername = proxyModels[i].Username; // Leave blank if no auth
+            //         string proxyPassword = proxyModels[i].Password; // Leave blank if no auth
+            //         string testUrl = "https://httpbin.org/ip";
+            //         bool isProxyWorking = await _proxyServce.IsProxyWorking(proxyAddress, proxyUsername, proxyPassword, testUrl);
+            //         if (isProxyWorking)
+            //         {
+            //             proxyModels[i].CheckStatus = "Proxy is working.";
+            //         }
+            //         else
+            //         {
+            //             proxyModels[i].CheckStatus = "Proxy is not working.";
+            //         }
+            //     }
 
-            return View(proxyModels);
-       }
-       [HttpPost]
+            return View();
+        }   
+    [HttpPost]
        public async Task<ActionResult> StartBrowser()
        {
 

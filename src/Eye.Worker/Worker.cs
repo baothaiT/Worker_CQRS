@@ -1,4 +1,5 @@
 using Eye.Application.SeleniumServices;
+using Eye.Application.SeleniumServices.Interfaces;
 using Eye.Application.Services;
 using Eye.Contract.Share.DTO;
 using Eye.Contract.Share.Models;
@@ -9,13 +10,13 @@ namespace Eye.Worker;
 public class Worker : BackgroundService
 {
     private readonly ILogger<Worker> _logger;
-    private readonly IAutoService _autoService;
+    private readonly IProcessWorkerService _processWorkerService;
 
 
-    public Worker(ILogger<Worker> logger, IAutoService autoService)
+    public Worker(ILogger<Worker> logger, IProcessWorkerService processWorkerService)
     {
         _logger = logger;
-        _autoService = autoService;
+        _processWorkerService = processWorkerService;
     }
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -26,9 +27,8 @@ public class Worker : BackgroundService
             {
                 _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
                 await Task.Delay(2000, stoppingToken);
-
-                await _autoService.Test();
-
+                await _processWorkerService.Job_CheckingAndUpdate_Proxy();
+                await Task.Delay(6000);
             }
             await Task.Delay(1000, stoppingToken);
         }

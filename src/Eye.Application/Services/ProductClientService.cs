@@ -10,14 +10,14 @@ using System.Threading.Tasks;
 
 namespace Eye.Application.Services
 {
-    public class ProductService : IProductService
+    public class ProductClientService : IProductClientService
     {
         private readonly IHttpClientFactory _httpClientFactory;
         private readonly string BaseUrl;
         private readonly string ApiKey;
         private readonly string Componemt;
 
-        public ProductService(IHttpClientFactory httpClientFactory)
+        public ProductClientService(IHttpClientFactory httpClientFactory)
         {
             _httpClientFactory = httpClientFactory;
 

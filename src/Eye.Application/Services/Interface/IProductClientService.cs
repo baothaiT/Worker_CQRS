@@ -7,7 +7,7 @@ using Eye.Contract.Share.DTO;
 
 namespace Eye.Application.Services;
 
-public interface IProductService
+public interface IProductClientService
 {
     public Task<IEnumerable<GetProductDTO>> GetProductsAsync();
     //Task<GetProductDTO> GetProductByIdAsync(string id);
