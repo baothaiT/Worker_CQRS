@@ -1,7 +1,23 @@
+using Eye.Application.SeleniumServices;
+using Eye.Application.Services;
+using Eye.Application.Services.Interface;
+
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddHttpClient();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+//builder.Services.AddTransient<IHttpClientService, HttpClientService>();
+builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IAccountService, AccountService>();
+builder.Services.AddScoped<IAutoService, AutoService>();
+builder.Services.AddScoped<IBrowserService, BrowserService>();
+builder.Services.AddScoped<IInPutBehaviorBrowserService, BehaviorBrowserService>();
+builder.Services.AddScoped<IOutPutBehaviorBrowserService, BehaviorBrowserService>();
+builder.Services.AddScoped<IScriptAutoService, ScriptAutoService>();
+builder.Services.AddScoped<IProxyServce, ProxyServce>();
+
+
 
 var app = builder.Build();
 

@@ -18,6 +18,6 @@ namespace Eye.Application.SeleniumServices
         void CloseAll();
         List<ProfileModel> GridProfilesWhenStart(int numberWidth, int numberHeith, List<ProfileModel> profileModels);
         List<ProfileModel> GridProfilesWhenStart(int numberWidth, int numberHeith, List<ProfileModel> profileModels, int xPaging, int yPaging);
-        void Test();
+        Task Test();
     }
 }

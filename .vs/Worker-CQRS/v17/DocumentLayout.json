@@ -3,128 +3,36 @@
   "WorkspaceRootPath": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C96C6641-3AB1-4411-A081-43484F3CDB48}|src\\Eye.UI\\Eye.UI.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eye.ui\\views\\browser\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C96C6641-3AB1-4411-A081-43484F3CDB48}|src\\Eye.UI\\Eye.UI.csproj|solutionrelative:src\\eye.ui\\views\\browser\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C96C6641-3AB1-4411-A081-43484F3CDB48}|src\\Eye.UI\\Eye.UI.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eye.ui\\controllers\\browsercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C96C6641-3AB1-4411-A081-43484F3CDB48}|src\\Eye.UI\\Eye.UI.csproj|solutionrelative:src\\eye.ui\\controllers\\browsercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C96C6641-3AB1-4411-A081-43484F3CDB48}|src\\Eye.UI\\Eye.UI.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eye.ui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C96C6641-3AB1-4411-A081-43484F3CDB48}|src\\Eye.UI\\Eye.UI.csproj|solutionrelative:src\\eye.ui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{51035056-450D-4F0C-88EC-8E3CA90FF7C2}|src\\Eye.Contract\\Eye.Contract.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eye.contract\\share\\models\\proxymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51035056-450D-4F0C-88EC-8E3CA90FF7C2}|src\\Eye.Contract\\Eye.Contract.csproj|solutionrelative:src\\eye.contract\\share\\models\\proxymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1C82EA3-D188-4370-AEFA-80915CD38A10}|src\\Eye.Application\\Eye.Application.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eye.application\\seleniumservices\\browserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1C82EA3-D188-4370-AEFA-80915CD38A10}|src\\Eye.Application\\Eye.Application.csproj|solutionrelative:src\\eye.application\\seleniumservices\\browserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C96C6641-3AB1-4411-A081-43484F3CDB48}|src\\Eye.UI\\Eye.UI.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eye.ui\\views\\browser\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C96C6641-3AB1-4411-A081-43484F3CDB48}|src\\Eye.UI\\Eye.UI.csproj|solutionrelative:src\\eye.ui\\views\\browser\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1C82EA3-D188-4370-AEFA-80915CD38A10}|src\\Eye.Application\\Eye.Application.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eye.application\\seleniumservices\\interfaces\\ibrowserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1C82EA3-D188-4370-AEFA-80915CD38A10}|src\\Eye.Application\\Eye.Application.csproj|solutionrelative:src\\eye.application\\seleniumservices\\interfaces\\ibrowserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1C82EA3-D188-4370-AEFA-80915CD38A10}|src\\Eye.Application\\Eye.Application.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eye.application\\services\\interface\\iproxyservce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1C82EA3-D188-4370-AEFA-80915CD38A10}|src\\Eye.Application\\Eye.Application.csproj|solutionrelative:src\\eye.application\\services\\interface\\iproxyservce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5C03916-F9C8-4D3E-A319-D6253F9829B0}|src\\Eye.Worker\\Eye.Worker.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eye.worker\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5C03916-F9C8-4D3E-A319-D6253F9829B0}|src\\Eye.Worker\\Eye.Worker.csproj|solutionrelative:src\\eye.worker\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1C82EA3-D188-4370-AEFA-80915CD38A10}|src\\Eye.Application\\Eye.Application.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eye.application\\services\\proxyservce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1C82EA3-D188-4370-AEFA-80915CD38A10}|src\\Eye.Application\\Eye.Application.csproj|solutionrelative:src\\eye.application\\services\\proxyservce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1C82EA3-D188-4370-AEFA-80915CD38A10}|src\\Eye.Application\\Eye.Application.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eye.application\\seleniumservices\\interfaces\\iscriptautoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1C82EA3-D188-4370-AEFA-80915CD38A10}|src\\Eye.Application\\Eye.Application.csproj|solutionrelative:src\\eye.application\\seleniumservices\\interfaces\\iscriptautoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1C82EA3-D188-4370-AEFA-80915CD38A10}|src\\Eye.Application\\Eye.Application.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eye.application\\seleniumservices\\scriptautoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1C82EA3-D188-4370-AEFA-80915CD38A10}|src\\Eye.Application\\Eye.Application.csproj|solutionrelative:src\\eye.application\\seleniumservices\\scriptautoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1C82EA3-D188-4370-AEFA-80915CD38A10}|src\\Eye.Application\\Eye.Application.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eye.application\\seleniumservices\\behaviorbrowserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1C82EA3-D188-4370-AEFA-80915CD38A10}|src\\Eye.Application\\Eye.Application.csproj|solutionrelative:src\\eye.application\\seleniumservices\\behaviorbrowserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C96C6641-3AB1-4411-A081-43484F3CDB48}|src\\Eye.UI\\Eye.UI.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eye.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C96C6641-3AB1-4411-A081-43484F3CDB48}|src\\Eye.UI\\Eye.UI.csproj|solutionrelative:src\\eye.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E1C82EA3-D188-4370-AEFA-80915CD38A10}|src\\Eye.Application\\Eye.Application.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eye.application\\seleniumservices\\autoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1C82EA3-D188-4370-AEFA-80915CD38A10}|src\\Eye.Application\\Eye.Application.csproj|solutionrelative:src\\eye.application\\seleniumservices\\autoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1C82EA3-D188-4370-AEFA-80915CD38A10}|src\\Eye.Application\\Eye.Application.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eye.application\\seleniumservices\\interfaces\\ioutputbehaviorbrowserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1C82EA3-D188-4370-AEFA-80915CD38A10}|src\\Eye.Application\\Eye.Application.csproj|solutionrelative:src\\eye.application\\seleniumservices\\interfaces\\ioutputbehaviorbrowserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1C82EA3-D188-4370-AEFA-80915CD38A10}|src\\Eye.Application\\Eye.Application.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eye.application\\seleniumservices\\interfaces\\iinputbehaviorbrowserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1C82EA3-D188-4370-AEFA-80915CD38A10}|src\\Eye.Application\\Eye.Application.csproj|solutionrelative:src\\eye.application\\seleniumservices\\interfaces\\iinputbehaviorbrowserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1C82EA3-D188-4370-AEFA-80915CD38A10}|src\\Eye.Application\\Eye.Application.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eye.application\\seleniumservices\\interfaces\\iautoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1C82EA3-D188-4370-AEFA-80915CD38A10}|src\\Eye.Application\\Eye.Application.csproj|solutionrelative:src\\eye.application\\seleniumservices\\interfaces\\iautoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51035056-450D-4F0C-88EC-8E3CA90FF7C2}|src\\Eye.Contract\\Eye.Contract.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eye.contract\\share\\dto\\product\\productbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51035056-450D-4F0C-88EC-8E3CA90FF7C2}|src\\Eye.Contract\\Eye.Contract.csproj|solutionrelative:src\\eye.contract\\share\\dto\\product\\productbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{51035056-450D-4F0C-88EC-8E3CA90FF7C2}|src\\Eye.Contract\\Eye.Contract.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eye.contract\\share\\static\\exampleurl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{51035056-450D-4F0C-88EC-8E3CA90FF7C2}|src\\Eye.Contract\\Eye.Contract.csproj|solutionrelative:src\\eye.contract\\share\\static\\exampleurl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51035056-450D-4F0C-88EC-8E3CA90FF7C2}|src\\Eye.Contract\\Eye.Contract.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eye.contract\\share\\static\\configurationdefaultdevice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51035056-450D-4F0C-88EC-8E3CA90FF7C2}|src\\Eye.Contract\\Eye.Contract.csproj|solutionrelative:src\\eye.contract\\share\\static\\configurationdefaultdevice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51035056-450D-4F0C-88EC-8E3CA90FF7C2}|src\\Eye.Contract\\Eye.Contract.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eye.contract\\share\\models\\profilemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51035056-450D-4F0C-88EC-8E3CA90FF7C2}|src\\Eye.Contract\\Eye.Contract.csproj|solutionrelative:src\\eye.contract\\share\\models\\profilemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51035056-450D-4F0C-88EC-8E3CA90FF7C2}|src\\Eye.Contract\\Eye.Contract.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eye.contract\\share\\enum\\statusprofileenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51035056-450D-4F0C-88EC-8E3CA90FF7C2}|src\\Eye.Contract\\Eye.Contract.csproj|solutionrelative:src\\eye.contract\\share\\enum\\statusprofileenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27AB80ED-25DE-46A2-973F-8C4B7E00F7E8}|Solution Items{27AB80ED-25DE-46A2-973F-8C4B7E00F7E8}|E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{27AB80ED-25DE-46A2-973F-8C4B7E00F7E8}|Solution Items{27AB80ED-25DE-46A2-973F-8C4B7E00F7E8}|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5C03916-F9C8-4D3E-A319-D6253F9829B0}|src\\Eye.Worker\\Eye.Worker.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eye.worker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5C03916-F9C8-4D3E-A319-D6253F9829B0}|src\\Eye.Worker\\Eye.Worker.csproj|solutionrelative:src\\eye.worker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1C82EA3-D188-4370-AEFA-80915CD38A10}|src\\Eye.Application\\Eye.Application.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eye.application\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1C82EA3-D188-4370-AEFA-80915CD38A10}|src\\Eye.Application\\Eye.Application.csproj|solutionrelative:src\\eye.application\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51035056-450D-4F0C-88EC-8E3CA90FF7C2}|src\\Eye.Contract\\Eye.Contract.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eye.contract\\share\\dto\\product\\getproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51035056-450D-4F0C-88EC-8E3CA90FF7C2}|src\\Eye.Contract\\Eye.Contract.csproj|solutionrelative:src\\eye.contract\\share\\dto\\product\\getproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1C82EA3-D188-4370-AEFA-80915CD38A10}|src\\Eye.Application\\Eye.Application.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eye.application\\services\\interface\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1C82EA3-D188-4370-AEFA-80915CD38A10}|src\\Eye.Application\\Eye.Application.csproj|solutionrelative:src\\eye.application\\services\\interface\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51035056-450D-4F0C-88EC-8E3CA90FF7C2}|src\\Eye.Contract\\Eye.Contract.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eye.contract\\share\\dto\\product\\updateproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51035056-450D-4F0C-88EC-8E3CA90FF7C2}|src\\Eye.Contract\\Eye.Contract.csproj|solutionrelative:src\\eye.contract\\share\\dto\\product\\updateproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51035056-450D-4F0C-88EC-8E3CA90FF7C2}|src\\Eye.Contract\\Eye.Contract.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eye.contract\\eye.contract.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{51035056-450D-4F0C-88EC-8E3CA90FF7C2}|src\\Eye.Contract\\Eye.Contract.csproj|solutionrelative:src\\eye.contract\\eye.contract.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1C82EA3-D188-4370-AEFA-80915CD38A10}|src\\Eye.Application\\Eye.Application.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eye.application\\eye.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{E1C82EA3-D188-4370-AEFA-80915CD38A10}|src\\Eye.Application\\Eye.Application.csproj|solutionrelative:src\\eye.application\\eye.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49DBE941-5064-4AE9-AAE3-EF7A9C882068}|src\\Eyey.Persistence\\Eyey.Persistence.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eyey.persistence\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49DBE941-5064-4AE9-AAE3-EF7A9C882068}|src\\Eyey.Persistence\\Eyey.Persistence.csproj|solutionrelative:src\\eyey.persistence\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F72D275-F357-4B6A-8E10-852C3AAE09D5}|src\\Eyye.Infrastructure.Mongo\\Eyye.Infrastructure.Mongo.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eyye.infrastructure.mongo\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F72D275-F357-4B6A-8E10-852C3AAE09D5}|src\\Eyye.Infrastructure.Mongo\\Eyye.Infrastructure.Mongo.csproj|solutionrelative:src\\eyye.infrastructure.mongo\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7F8D697-F30D-459E-97F3-260C33E8D0B1}|src\\Eye.Infrastructure.MessageBus\\Eye.Infrastructure.MessageBus.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eye.infrastructure.messagebus\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7F8D697-F30D-459E-97F3-260C33E8D0B1}|src\\Eye.Infrastructure.MessageBus\\Eye.Infrastructure.MessageBus.csproj|solutionrelative:src\\eye.infrastructure.messagebus\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C49CA183-DEB4-4D00-B7F9-4183AF8CC9A7}|src\\Eye.Infrastructure\\Eye.Infrastructure.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eye.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C49CA183-DEB4-4D00-B7F9-4183AF8CC9A7}|src\\Eye.Infrastructure\\Eye.Infrastructure.csproj|solutionrelative:src\\eye.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A800B875-E4F9-4779-B56A-B9E5C99C3388}|src\\Eye.Domain\\Eye.Domain.csproj|e:\\learn\\development\\c#\\lab\\design-partern\\cqrs\\worker-cqrs\\src\\eye.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A800B875-E4F9-4779-B56A-B9E5C99C3388}|src\\Eye.Domain\\Eye.Domain.csproj|solutionrelative:src\\eye.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -133,414 +41,117 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedWidth": 286,
           "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.UI\\Views\\Browser\\Index.cshtml",
+              "RelativeDocumentMoniker": "src\\Eye.UI\\Views\\Browser\\Index.cshtml",
+              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.UI\\Views\\Browser\\Index.cshtml",
+              "RelativeToolTip": "src\\Eye.UI\\Views\\Browser\\Index.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAD4AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-28T19:50:08.589Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BrowserController.cs",
+              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.UI\\Controllers\\BrowserController.cs",
+              "RelativeDocumentMoniker": "src\\Eye.UI\\Controllers\\BrowserController.cs",
+              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.UI\\Controllers\\BrowserController.cs",
+              "RelativeToolTip": "src\\Eye.UI\\Controllers\\BrowserController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAIwB0AAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T19:05:14.507Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.UI\\Views\\Browser\\Index.cshtml",
-              "RelativeDocumentMoniker": "src\\Eye.UI\\Views\\Browser\\Index.cshtml",
-              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.UI\\Views\\Browser\\Index.cshtml",
-              "RelativeToolTip": "src\\Eye.UI\\Views\\Browser\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-25T13:33:53.597Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.UI\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "src\\Eye.UI\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.UI\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "src\\Eye.UI\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-25T13:32:07.488Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BrowserController.cs",
-              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.UI\\Controllers\\BrowserController.cs",
-              "RelativeDocumentMoniker": "src\\Eye.UI\\Controllers\\BrowserController.cs",
-              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.UI\\Controllers\\BrowserController.cs",
-              "RelativeToolTip": "src\\Eye.UI\\Controllers\\BrowserController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAjAAAA",
+              "Title": "ProxyModel.cs",
+              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Contract\\Share\\Models\\ProxyModel.cs",
+              "RelativeDocumentMoniker": "src\\Eye.Contract\\Share\\Models\\ProxyModel.cs",
+              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Contract\\Share\\Models\\ProxyModel.cs",
+              "RelativeToolTip": "src\\Eye.Contract\\Share\\Models\\ProxyModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAwAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T13:31:59.67Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ScriptAutoService.cs",
-              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Application\\SeleniumServices\\ScriptAutoService.cs",
-              "RelativeDocumentMoniker": "src\\Eye.Application\\SeleniumServices\\ScriptAutoService.cs",
-              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Application\\SeleniumServices\\ScriptAutoService.cs",
-              "RelativeToolTip": "src\\Eye.Application\\SeleniumServices\\ScriptAutoService.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAoAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T13:28:36.814Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BehaviorBrowserService.cs",
-              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Application\\SeleniumServices\\BehaviorBrowserService.cs",
-              "RelativeDocumentMoniker": "src\\Eye.Application\\SeleniumServices\\BehaviorBrowserService.cs",
-              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Application\\SeleniumServices\\BehaviorBrowserService.cs",
-              "RelativeToolTip": "src\\Eye.Application\\SeleniumServices\\BehaviorBrowserService.cs",
-              "ViewState": "AQIAAHEAAAAAAAAAAAAuwAgAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T13:27:47.807Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AutoService.cs",
-              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Application\\SeleniumServices\\AutoService.cs",
-              "RelativeDocumentMoniker": "src\\Eye.Application\\SeleniumServices\\AutoService.cs",
-              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Application\\SeleniumServices\\AutoService.cs",
-              "RelativeToolTip": "src\\Eye.Application\\SeleniumServices\\AutoService.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAYwAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T13:26:12.599Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IAutoService.cs",
-              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Application\\SeleniumServices\\Interfaces\\IAutoService.cs",
-              "RelativeDocumentMoniker": "src\\Eye.Application\\SeleniumServices\\Interfaces\\IAutoService.cs",
-              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Application\\SeleniumServices\\Interfaces\\IAutoService.cs",
-              "RelativeToolTip": "src\\Eye.Application\\SeleniumServices\\Interfaces\\IAutoService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T13:25:38.992Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IScriptAutoService.cs",
-              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Application\\SeleniumServices\\Interfaces\\IScriptAutoService.cs",
-              "RelativeDocumentMoniker": "src\\Eye.Application\\SeleniumServices\\Interfaces\\IScriptAutoService.cs",
-              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Application\\SeleniumServices\\Interfaces\\IScriptAutoService.cs",
-              "RelativeToolTip": "src\\Eye.Application\\SeleniumServices\\Interfaces\\IScriptAutoService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAsAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T13:25:24.707Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IOutPutBehaviorBrowserService.cs",
-              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Application\\SeleniumServices\\Interfaces\\IOutPutBehaviorBrowserService.cs",
-              "RelativeDocumentMoniker": "src\\Eye.Application\\SeleniumServices\\Interfaces\\IOutPutBehaviorBrowserService.cs",
-              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Application\\SeleniumServices\\Interfaces\\IOutPutBehaviorBrowserService.cs",
-              "RelativeToolTip": "src\\Eye.Application\\SeleniumServices\\Interfaces\\IOutPutBehaviorBrowserService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T13:24:50.977Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IInPutBehaviorBrowserService.cs",
-              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Application\\SeleniumServices\\Interfaces\\IInPutBehaviorBrowserService.cs",
-              "RelativeDocumentMoniker": "src\\Eye.Application\\SeleniumServices\\Interfaces\\IInPutBehaviorBrowserService.cs",
-              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Application\\SeleniumServices\\Interfaces\\IInPutBehaviorBrowserService.cs",
-              "RelativeToolTip": "src\\Eye.Application\\SeleniumServices\\Interfaces\\IInPutBehaviorBrowserService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T13:24:21.911Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IBrowserService.cs",
-              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Application\\SeleniumServices\\Interfaces\\IBrowserService.cs",
-              "RelativeDocumentMoniker": "src\\Eye.Application\\SeleniumServices\\Interfaces\\IBrowserService.cs",
-              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Application\\SeleniumServices\\Interfaces\\IBrowserService.cs",
-              "RelativeToolTip": "src\\Eye.Application\\SeleniumServices\\Interfaces\\IBrowserService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T13:23:24.138Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BrowserService.cs",
-              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Application\\SeleniumServices\\BrowserService.cs",
-              "RelativeDocumentMoniker": "src\\Eye.Application\\SeleniumServices\\BrowserService.cs",
-              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Application\\SeleniumServices\\BrowserService.cs",
-              "RelativeToolTip": "src\\Eye.Application\\SeleniumServices\\BrowserService.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAwEUAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T13:22:36.332Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ExampleUrl.cs",
-              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Contract\\Share\\Static\\ExampleUrl.cs",
-              "RelativeDocumentMoniker": "src\\Eye.Contract\\Share\\Static\\ExampleUrl.cs",
-              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Contract\\Share\\Static\\ExampleUrl.cs",
-              "RelativeToolTip": "src\\Eye.Contract\\Share\\Static\\ExampleUrl.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T13:20:46.21Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ConfigurationDefaultDevice.cs",
-              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Contract\\Share\\Static\\ConfigurationDefaultDevice.cs",
-              "RelativeDocumentMoniker": "src\\Eye.Contract\\Share\\Static\\ConfigurationDefaultDevice.cs",
-              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Contract\\Share\\Static\\ConfigurationDefaultDevice.cs",
-              "RelativeToolTip": "src\\Eye.Contract\\Share\\Static\\ConfigurationDefaultDevice.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T13:19:53.735Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "StatusProfileEnum.cs",
-              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Contract\\Share\\Enum\\StatusProfileEnum.cs",
-              "RelativeDocumentMoniker": "src\\Eye.Contract\\Share\\Enum\\StatusProfileEnum.cs",
-              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Contract\\Share\\Enum\\StatusProfileEnum.cs",
-              "RelativeToolTip": "src\\Eye.Contract\\Share\\Enum\\StatusProfileEnum.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T13:14:28.821Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ProfileModel.cs",
-              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Contract\\Share\\Models\\ProfileModel.cs",
-              "RelativeDocumentMoniker": "src\\Eye.Contract\\Share\\Models\\ProfileModel.cs",
-              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Contract\\Share\\Models\\ProfileModel.cs",
-              "RelativeToolTip": "src\\Eye.Contract\\Share\\Models\\ProfileModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T13:13:49.21Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Eye.Contract",
-              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Contract\\Eye.Contract.csproj",
-              "RelativeDocumentMoniker": "src\\Eye.Contract\\Eye.Contract.csproj",
-              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Contract\\Eye.Contract.csproj",
-              "RelativeToolTip": "src\\Eye.Contract\\Eye.Contract.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-25T12:51:51.767Z",
+              "WhenOpened": "2024-09-28T20:32:49.333Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Worker.cs",
-              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Worker\\Worker.cs",
-              "RelativeDocumentMoniker": "src\\Eye.Worker\\Worker.cs",
-              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Worker\\Worker.cs",
-              "RelativeToolTip": "src\\Eye.Worker\\Worker.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T13:05:20.247Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "README.md",
-              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\README.md",
-              "RelativeDocumentMoniker": "README.md",
-              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\README.md",
-              "RelativeToolTip": "README.md",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2024-09-25T13:00:06.749Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
               "Title": "Program.cs",
-              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Worker\\Program.cs",
-              "RelativeDocumentMoniker": "src\\Eye.Worker\\Program.cs",
-              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Worker\\Program.cs",
-              "RelativeToolTip": "src\\Eye.Worker\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.UI\\Program.cs",
+              "RelativeDocumentMoniker": "src\\Eye.UI\\Program.cs",
+              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.UI\\Program.cs",
+              "RelativeToolTip": "src\\Eye.UI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T12:56:30.879Z",
+              "WhenOpened": "2024-09-28T19:51:11.522Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Application\\Services\\ProductService.cs",
-              "RelativeDocumentMoniker": "src\\Eye.Application\\Services\\ProductService.cs",
-              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Application\\Services\\ProductService.cs",
-              "RelativeToolTip": "src\\Eye.Application\\Services\\ProductService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABJAAAA",
+              "DocumentIndex": 3,
+              "Title": "IProxyServce.cs",
+              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Application\\Services\\Interface\\IProxyServce.cs",
+              "RelativeDocumentMoniker": "src\\Eye.Application\\Services\\Interface\\IProxyServce.cs",
+              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Application\\Services\\Interface\\IProxyServce.cs",
+              "RelativeToolTip": "src\\Eye.Application\\Services\\Interface\\IProxyServce.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T12:53:30.332Z",
+              "WhenOpened": "2024-09-28T19:47:27.667Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "UpdateProductDto.cs",
-              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Contract\\Share\\DTO\\Product\\UpdateProductDto.cs",
-              "RelativeDocumentMoniker": "src\\Eye.Contract\\Share\\DTO\\Product\\UpdateProductDto.cs",
-              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Contract\\Share\\DTO\\Product\\UpdateProductDto.cs",
-              "RelativeToolTip": "src\\Eye.Contract\\Share\\DTO\\Product\\UpdateProductDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "DocumentIndex": 4,
+              "Title": "ProxyServce.cs",
+              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Application\\Services\\ProxyServce.cs",
+              "RelativeDocumentMoniker": "src\\Eye.Application\\Services\\ProxyServce.cs",
+              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Application\\Services\\ProxyServce.cs",
+              "RelativeToolTip": "src\\Eye.Application\\Services\\ProxyServce.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAjwAwAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T12:52:17.793Z",
+              "WhenOpened": "2024-09-28T19:45:37.771Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ProductBase.cs",
-              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Contract\\Share\\DTO\\Product\\ProductBase.cs",
-              "RelativeDocumentMoniker": "src\\Eye.Contract\\Share\\DTO\\Product\\ProductBase.cs",
-              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Contract\\Share\\DTO\\Product\\ProductBase.cs",
-              "RelativeToolTip": "src\\Eye.Contract\\Share\\DTO\\Product\\ProductBase.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAANAAAA",
+              "DocumentIndex": 7,
+              "Title": "ExampleUrl.cs",
+              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Contract\\Share\\Static\\ExampleUrl.cs",
+              "RelativeDocumentMoniker": "src\\Eye.Contract\\Share\\Static\\ExampleUrl.cs",
+              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Contract\\Share\\Static\\ExampleUrl.cs",
+              "RelativeToolTip": "src\\Eye.Contract\\Share\\Static\\ExampleUrl.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T12:52:15.047Z",
+              "WhenOpened": "2024-09-28T19:21:59.214Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "GetProductDTO.cs",
-              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Contract\\Share\\DTO\\Product\\GetProductDTO.cs",
-              "RelativeDocumentMoniker": "src\\Eye.Contract\\Share\\DTO\\Product\\GetProductDTO.cs",
-              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Contract\\Share\\DTO\\Product\\GetProductDTO.cs",
-              "RelativeToolTip": "src\\Eye.Contract\\Share\\DTO\\Product\\GetProductDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAANAAAA",
+              "DocumentIndex": 6,
+              "Title": "AutoService.cs",
+              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Application\\SeleniumServices\\AutoService.cs",
+              "RelativeDocumentMoniker": "src\\Eye.Application\\SeleniumServices\\AutoService.cs",
+              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Application\\SeleniumServices\\AutoService.cs",
+              "RelativeToolTip": "src\\Eye.Application\\SeleniumServices\\AutoService.cs",
+              "ViewState": "AQIAAM4AAAAAAAAAAAAQwN0AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T12:52:11.786Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "IProductService.cs",
-              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Application\\Services\\Interface\\IProductService.cs",
-              "RelativeDocumentMoniker": "src\\Eye.Application\\Services\\Interface\\IProductService.cs",
-              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Application\\Services\\Interface\\IProductService.cs",
-              "RelativeToolTip": "src\\Eye.Application\\Services\\Interface\\IProductService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T12:51:05.749Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Eye.Application",
-              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Application\\Eye.Application.csproj",
-              "RelativeDocumentMoniker": "src\\Eye.Application\\Eye.Application.csproj",
-              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Application\\Eye.Application.csproj",
-              "RelativeToolTip": "src\\Eye.Application\\Eye.Application.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-25T12:40:20.409Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eyey.Persistence\\Class1.cs",
-              "RelativeDocumentMoniker": "src\\Eyey.Persistence\\Class1.cs",
-              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eyey.Persistence\\Class1.cs",
-              "RelativeToolTip": "src\\Eyey.Persistence\\Class1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T12:42:49.731Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eyye.Infrastructure.Mongo\\Class1.cs",
-              "RelativeDocumentMoniker": "src\\Eyye.Infrastructure.Mongo\\Class1.cs",
-              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eyye.Infrastructure.Mongo\\Class1.cs",
-              "RelativeToolTip": "src\\Eyye.Infrastructure.Mongo\\Class1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T12:42:23.953Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Infrastructure.MessageBus\\Class1.cs",
-              "RelativeDocumentMoniker": "src\\Eye.Infrastructure.MessageBus\\Class1.cs",
-              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Infrastructure.MessageBus\\Class1.cs",
-              "RelativeToolTip": "src\\Eye.Infrastructure.MessageBus\\Class1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T12:41:37.558Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Infrastructure\\Class1.cs",
-              "RelativeDocumentMoniker": "src\\Eye.Infrastructure\\Class1.cs",
-              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Infrastructure\\Class1.cs",
-              "RelativeToolTip": "src\\Eye.Infrastructure\\Class1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T12:41:16.936Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Domain\\Class1.cs",
-              "RelativeDocumentMoniker": "src\\Eye.Domain\\Class1.cs",
-              "ToolTip": "E:\\Learn\\Development\\C#\\Lab\\Design-Partern\\CQRS\\Worker-CQRS\\src\\Eye.Domain\\Class1.cs",
-              "RelativeToolTip": "src\\Eye.Domain\\Class1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T12:40:51.601Z",
+              "WhenOpened": "2024-09-28T19:05:40.607Z",
               "EditorCaption": ""
             }
           ]

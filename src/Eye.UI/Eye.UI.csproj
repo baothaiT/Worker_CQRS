@@ -15,4 +15,8 @@
     <ProjectReference Include="..\Eye.Contract\Eye.Contract.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+
 </Project>

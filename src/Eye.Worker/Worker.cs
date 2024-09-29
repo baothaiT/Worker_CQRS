@@ -1,17 +1,21 @@
+using Eye.Application.SeleniumServices;
 using Eye.Application.Services;
 using Eye.Contract.Share.DTO;
+using Eye.Contract.Share.Models;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Eye.Worker;
 
 public class Worker : BackgroundService
 {
     private readonly ILogger<Worker> _logger;
-    private readonly IProductService _productService;
+    private readonly IAutoService _autoService;
 
-    public Worker(ILogger<Worker> logger, IProductService productService)
+
+    public Worker(ILogger<Worker> logger, IAutoService autoService)
     {
         _logger = logger;
-        _productService = productService;
+        _autoService = autoService;
     }
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -22,7 +26,9 @@ public class Worker : BackgroundService
             {
                 _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
                 await Task.Delay(2000, stoppingToken);
-                _logger.LogInformation("Start Create Browser Selenium");
+
+                await _autoService.Test();
+
             }
             await Task.Delay(1000, stoppingToken);
         }

@@ -69,21 +69,58 @@ namespace Eye.Application.SeleniumServices
             //chromeOptions.AddArgument("--user-agent=" + UserAgents.user_agents_list_pretty[index]);
             return chromeOptions;
         }
+        private Proxy AddProxy(ProfileModel profile)
+        {
+            // Proxy details
+            if(
+                !String.IsNullOrEmpty(profile.Ip) &&
+                !String.IsNullOrEmpty(profile.Port) &&
+                !String.IsNullOrEmpty(profile.UserName) &&
+                !String.IsNullOrEmpty(profile.Password) 
+            )
+            {
+                string proxyHost = profile.Ip; // e.g., "123.45.67.89"
+                string proxyPort = profile.Port; // e.g., 8080
+
+                // If proxy requires authentication
+                string proxyUser = profile.UserName;
+                string proxyPass = profile.Password;
+
+                // Setting up the proxy
+                var proxy = new Proxy()
+                {
+                    HttpProxy = $"{proxyHost}:{proxyPort}",
+                    SslProxy = $"{proxyHost}:{proxyPort}",
+                    FtpProxy = $"{proxyHost}:{proxyPort}",
+                    SocksUserName = proxyUser,
+                    SocksPassword = proxyPass
+                };
+                return proxy;
+            }
+            return new Proxy();
+        }
         public Task<IWebDriver> CreateProfile(ProfileModel profile)
         {
             Console.WriteLine("Thread: " + Thread.CurrentThread.ManagedThreadId);
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions = SettingBrowserOption(chromeOptions, profile);
-            //chromeOptions = AddUserAgents(chromeOptions, 1);
-
+            chromeOptions.Proxy = AddProxy(profile);
+            chromeOptions.AddArgument("--proxy-bypass-list=*");
             IWebDriver _driverProfile = new ChromeDriver(chromeOptions);
-            // _driverProfile.Navigate().GoToUrl(ExampleUrl.TestFormLogin); // URL
-            // _driverProfile.Navigate().GoToUrl(ExampleUrl.Fv); // URL
-            _driverProfile.Navigate().GoToUrl(ExampleUrl.WhatIsMyBrowser); // URL
+            try
+            {
+                _driverProfile.Navigate().GoToUrl(ExampleUrl.SpeedTest); // URL
 
-            WebDriverWait wait = new WebDriverWait(_driverProfile, TimeSpan.FromSeconds(10));
-            wait.Until(driver => driver.Title.Length > 0);
-            return Task.FromResult(_driverProfile);
+                WebDriverWait wait = new WebDriverWait(_driverProfile, TimeSpan.FromSeconds(10));
+                wait.Until(driver => driver.Title.Length > 0);
+                return Task.FromResult(_driverProfile);
+            }
+            catch (WebDriverException extensions)
+            {
+                Console.WriteLine(extensions);
+                _driverProfile?.Dispose();
+                return null;
+            }
         }
 
         public int Test_Console(int i)

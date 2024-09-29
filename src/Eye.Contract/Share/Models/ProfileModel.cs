@@ -18,5 +18,10 @@ namespace Eye.Contract.Share.Models
         public int yPosition { get; set; }
         public IWebDriver? webDriver { get; set; } = null;
         public StatusProfileEnum statusProfileEnum { get; set; }
+
+        public string? Ip { get; set;}
+        public string? Port { get; set;}
+        public string? UserName { get; set;}
+        public string? Password { get; set;}
     } 
 }

@@ -1,6 +1,8 @@
 ﻿using Eye.Contract.Share.Models;
 using Eye.Contract.Share.Static;
+using Microsoft.Extensions.Logging;
 using OpenQA.Selenium;
+using OpenQA.Selenium.BiDi.Communication;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,21 +16,28 @@ public class AutoService : IAutoService
     private readonly IBrowserService _browserService;
     private List<ProfileModel> _profileModels;
     private readonly IScriptAutoService _scriptAutoService;
+    private readonly ILogger<AutoService> _logger;
 
-    public AutoService(IBrowserService browserService, IScriptAutoService scriptAutoService)
+    public AutoService(IBrowserService browserService, IScriptAutoService scriptAutoService, ILogger<AutoService> logger)
     {
         _browserService = browserService;
         _profileModels = new List<ProfileModel>();
         _scriptAutoService = scriptAutoService;
+        _logger = logger;
     }
 
     public async Task<IWebDriver> StartProfile(ProfileModel profileModel)
     {
         Console.WriteLine($"Started Profile: " + profileModel.Name);
-        profileModel.webDriver = await _browserService.CreateProfile(profileModel);
-        _profileModels.Add(profileModel);
-        Console.WriteLine($"Ended Profile: " + profileModel.Name);
-        return profileModel.webDriver;
+        var responseDriver = await _browserService.CreateProfile(profileModel);
+        if(responseDriver != null)
+        {
+            profileModel.webDriver = responseDriver;
+            _profileModels.Add(profileModel);
+            Console.WriteLine($"Ended Profile: " + profileModel.Name);
+            return profileModel.webDriver;
+        }
+        return null;
     }
 
     public void CloseProfile(string profileName)
@@ -131,16 +140,26 @@ public class AutoService : IAutoService
     {
         Parallel.ForEach(profileModels, profile =>
         {
+            try
+            {
+                Task.Run(() => StartProfile(profile)).Wait();
+            }
+            catch (AggregateException ex)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"Error => AggregateException: {ex}");
+                Console.ResetColor();
+            }
             // Start the asynchronous method within a task.
             // Start
-            Task.Run(() => StartProfile(profile)).Wait();
+            
 
             // Run Script
             //_scriptAutoService.TestScript(profile);
 
             // Close
-            profile.webDriver?.Dispose();
-            _profileModels.Remove(profile);
+            //profile.webDriver?.Dispose();
+            //_profileModels.Remove(profile);
         });
     }
 
@@ -150,17 +169,62 @@ public class AutoService : IAutoService
         {
             Console.WriteLine("Start Close profile: " + index);
             Console.WriteLine("Thread: " + Thread.CurrentThread.ManagedThreadId);
-            profile.webDriver?.Dispose();
-            _profileModels.Remove(profile);
+            if(profile != null)
+            {
+                profile.webDriver?.Dispose();
+                _profileModels.Remove(profile);
+            }
+            
             Console.WriteLine("End Close profile: " + index);
         });
 
     }
-    public void Test()
+    //public void Test()
+    //{
+    //    Parallel.ForEach(_profileModels, (profile, state, index) =>
+    //    {
+    //        //_scriptAutoService.TestScript(profile);
+    //    });
+    //}
+    private ProfileModel CreateProfileModel()
     {
-        Parallel.ForEach(_profileModels, (profile, state, index) =>
+        List<ProfileModel> profileModels = new List<ProfileModel>();
+        ProfileModel profileModel = new ProfileModel()
         {
-            //_scriptAutoService.TestScript(profile);
-        });
+            Name = "Test1",
+            xPosition = 180,
+            yPosition = 100,
+            screenHeith = 800,
+            screenWidth = 600,
+            Ip = "38.154.227.167",
+            Port = "5868",
+            UserName = "qxibizrx",
+            Password = "ximfqfs33pyv"
+        };
+        //38.154.227.167:5868:qxibizrx:ximfqfs33pyv
+        profileModels.Add(profileModel);
+        return profileModel;
+    }
+
+    public async Task Test()
+    {
+        _logger.LogInformation("Start Create Browser Selenium");
+
+        List<ProfileModel> profileModels = new List<ProfileModel>();
+        // profileModels.AddRange(CreateProfileModel());
+
+        Console.WriteLine("Start StartAll");
+        int x = 7;
+        int y = 4;
+        profileModels = GridProfilesWhenStart(x, y, profileModels, 180, 0);
+        // StartAll_Parallel(profileModels);
+
+        var a = StartProfile(CreateProfileModel());
+        
+        Console.WriteLine("End StartAll");
+        await Task.Delay(6000);
+        // CloseAll();
+        _logger.LogInformation("End Create Browser Selenium");
+        await Task.Delay(2000);
     }
 }

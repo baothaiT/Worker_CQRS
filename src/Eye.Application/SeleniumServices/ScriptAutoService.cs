@@ -1,5 +1,7 @@
 ﻿using Eye.Contract.Share.Models;
+using Microsoft.Extensions.Logging;
 using OpenQA.Selenium;
+using OpenQA.Selenium.BiDi.Communication;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,11 +15,15 @@ public class ScriptAutoService : IScriptAutoService
     private readonly IInPutBehaviorBrowserService _inPutBehaviorBrowserService;
     private readonly IOutPutBehaviorBrowserService _outPutBehaviorBrowserService;
 
-    public ScriptAutoService(IInPutBehaviorBrowserService inPutBehaviorBrowserService, IOutPutBehaviorBrowserService outPutBehaviorBrowserService)
+    public ScriptAutoService(
+        IInPutBehaviorBrowserService inPutBehaviorBrowserService, 
+        IOutPutBehaviorBrowserService outPutBehaviorBrowserService
+        )
     {
         _inPutBehaviorBrowserService = inPutBehaviorBrowserService;
         _outPutBehaviorBrowserService = outPutBehaviorBrowserService;
     }
+    
 
     public void TestScript(ProfileModel profile)
     {

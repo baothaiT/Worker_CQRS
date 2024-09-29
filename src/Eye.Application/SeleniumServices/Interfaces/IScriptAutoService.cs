@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Eye.Application.SeleniumServices
+namespace Eye.Application.SeleniumServices;
+
+public interface IScriptAutoService
 {
-    public interface IScriptAutoService
-    {
-        public void TestScript(ProfileModel profile);
-    }
+    public void TestScript(ProfileModel profile);
+    
 }

@@ -1,0 +1,41 @@
+﻿@model List<Eye.Contract.Share.DTO._JoinDTO.Account_Browser_DTO>
+@{
+}
+
+
+<div>
+    <h1>Index</h1>
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">AccountId</th>
+                    <th scope="col">UserName</th>
+                    <th scope="col">Password</th>
+                    <th scope="col">IsStatus</th>
+                    <th scope="col">AccountCreateDate</th>
+                    <th scope="col">BrowserId</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">BrowserIsStatus</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <th scope="row">@item.AccountId</th>
+                        <td>@item.UserName</td>
+                        <td>@item.Password</td>
+                        <td>@item.IsStatus</td>
+                        <td>@item.AccountCreateDate</td>
+                        <td>@item.BrowserId</td>
+                        <td>@item.Name</td>
+                        <td>@item.BrowserIsStatus</td>
+                    </tr>
+                }
+                
+
+            </tbody>
+        </table>
+    </div>
+</div>
