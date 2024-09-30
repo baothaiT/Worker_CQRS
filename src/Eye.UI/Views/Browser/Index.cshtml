@@ -14,55 +14,13 @@
         <input type="hidden" name="user_id" value="1" />
         <button type="submit" class="btn btn-secondary">Close Browser</button>
     </form>
+    <form asp-controller="Browser" asp-action="StartAll">
+        <input type="hidden" name="user_id" value="1" />
+        <button type="submit" class="btn btn-secondary">Start All</button>
+    </form>
+    <form asp-controller="Browser" asp-action="CloseAll">
+        <input type="hidden" name="user_id" value="1" />
+        <button type="submit" class="btn btn-secondary">Close All</button>
+    </form>
 </div>
 <br />
-<div class="btn-group" role="group" aria-label="Basic example">
-    <div>
-        <h3>@ViewBag.CheckProxy</h3>
-        <p>
-            @ViewBag.Ip : @ViewBag.User : @ViewBag.Password
-        </p>
-        <form method="post" asp-action="CheckProxy">
-            <label for="ip">Ip:</label>
-            <input type="text" id="Ip" name="Ip" required />
-            <br />
-            <label for="port">Port:</label>
-            <input type="text" id="port" name="port" required />
-            <br />
-            <label for="userName">UserName:</label>
-            <input type="text" id="userName" name="userName" required />
-            <br />
-            <label for="password">Password:</label>
-            <input type="text" id="password" name="password" required />
-            <br />
-            <input type="submit" value="Submit" />
-        </form>
-    </div>
-</div>
-<div>
-    <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">Ip</th>
-                <th scope="col">Port</th>
-                <th scope="col">UserName</th>
-                <th scope="col">Password</th>
-                <th scope="col">Check Status</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <th scope="row">1</th>
-                    <td>@item.IP</td>
-                    <td>@item.Port</td>
-                    <td>@item.Username</td>
-                    <td>@item.Password</td>
-                    <td>@item.CheckStatus</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-</div>

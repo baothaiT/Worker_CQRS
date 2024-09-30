@@ -42,6 +42,5 @@ public class ProcessWorkerService : IProcessWorkerService
 
         await _proxyClientServce.UpdateAllProxies(proxies_Checked);
         Console.WriteLine("End Update all proxies from DB");
-        
     }
 }

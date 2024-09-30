@@ -1,5 +1,6 @@
 ﻿using Eye.Application.Services.Interface;
 using Eye.Contract.Share.DTO;
+using Eye.Contract.Share.Enum;
 using Eye.Contract.Share.Models;
 using OpenQA.Selenium;
 using System;
@@ -66,5 +67,20 @@ namespace Eye.Application.Services
             response.EnsureSuccessStatusCode(); // Throws if status code is not 2xx
             Console.WriteLine("End - Update All Proxies");
         }
+
+        public async Task<IEnumerable<GetProxyDto>> GetAllProxiesByStatus(ProxyStatusEnum proxyStatus)
+        {
+            Console.WriteLine("Start - Get All Proxies By Status" + nameof(proxyStatus));
+            var requestUrl = $"{BaseUrl}/{Componemt}/GetProxiesByStatus/{proxyStatus}";
+            var client = _httpClientFactory.CreateClient();
+
+            HttpResponseMessage response = await client.GetAsync(requestUrl);
+            response.EnsureSuccessStatusCode(); // Throws if status code is not 2xx
+
+            var jsonResponse = await response.Content.ReadAsStringAsync();
+            Console.WriteLine("End - Get All Proxies");
+            return JsonSerializer.Deserialize<IEnumerable<GetProxyDto>>(jsonResponse, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+        }
+
     }
 }

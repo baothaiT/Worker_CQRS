@@ -1,4 +1,5 @@
-﻿using Eye.Contract.Share.Models;
+﻿using Eye.Contract.Share.DTO;
+using Eye.Contract.Share.Models;
 using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
@@ -19,5 +20,6 @@ namespace Eye.Application.SeleniumServices
         List<ProfileModel> GridProfilesWhenStart(int numberWidth, int numberHeith, List<ProfileModel> profileModels);
         List<ProfileModel> GridProfilesWhenStart(int numberWidth, int numberHeith, List<ProfileModel> profileModels, int xPaging, int yPaging);
         Task Test();
+        Task StartAllByProxies(List<GetProxyDto> getProxyDtos);
     }
 }

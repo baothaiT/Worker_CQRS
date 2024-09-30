@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Options;
 
 namespace Eye.Application.SeleniumServices
 {
@@ -106,10 +107,11 @@ namespace Eye.Application.SeleniumServices
             chromeOptions = SettingBrowserOption(chromeOptions, profile);
             chromeOptions.Proxy = AddProxy(profile);
             chromeOptions.AddArgument("--proxy-bypass-list=*");
+
             IWebDriver _driverProfile = new ChromeDriver(chromeOptions);
             try
             {
-                _driverProfile.Navigate().GoToUrl(ExampleUrl.SpeedTest); // URL
+                _driverProfile.Navigate().GoToUrl(ExampleUrl.WhatIsMyIPAddress); // URL
 
                 WebDriverWait wait = new WebDriverWait(_driverProfile, TimeSpan.FromSeconds(10));
                 wait.Until(driver => driver.Title.Length > 0);

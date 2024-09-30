@@ -1,4 +1,5 @@
 ﻿using Eye.Contract.Share.DTO;
+using Eye.Contract.Share.Enum;
 using Eye.Contract.Share.Models;
 using OpenQA.Selenium;
 using System;
@@ -14,5 +15,6 @@ namespace Eye.Application.Services.Interface
         Task<IEnumerable<GetProxyDto>> AllProxy();
         Task<IEnumerable<GetProxyDto>> IsProxyWorking(IEnumerable<GetProxyDto> proxies);
         Task UpdateAllProxies(List<GetProxyDto> proxies);
+        Task<IEnumerable<GetProxyDto>> GetAllProxiesByStatus(ProxyStatusEnum proxyStatus);
     }
 }

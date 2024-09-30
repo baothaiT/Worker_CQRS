@@ -1,4 +1,5 @@
-﻿using Eye.Contract.Share.Models;
+﻿using Eye.Contract.Share.DTO;
+using Eye.Contract.Share.Models;
 using Eye.Contract.Share.Static;
 using Microsoft.Extensions.Logging;
 using OpenQA.Selenium;
@@ -186,45 +187,61 @@ public class AutoService : IAutoService
     //        //_scriptAutoService.TestScript(profile);
     //    });
     //}
-    private ProfileModel CreateProfileModel()
+
+
+
+    private ProfileModel CreateProfile(string NameProfile, string Ip, int Port, string User, string Password)
     {
-        List<ProfileModel> profileModels = new List<ProfileModel>();
         ProfileModel profileModel = new ProfileModel()
         {
-            Name = "Test1",
+            Name = NameProfile,
             xPosition = 180,
             yPosition = 100,
             screenHeith = 800,
             screenWidth = 600,
-            Ip = "38.154.227.167",
-            Port = "5868",
-            UserName = "qxibizrx",
-            Password = "ximfqfs33pyv"
+            Ip = Ip,
+            Port = Port.ToString(),
+            UserName = User,
+            Password = Password
         };
-        //38.154.227.167:5868:qxibizrx:ximfqfs33pyv
-        profileModels.Add(profileModel);
         return profileModel;
     }
 
-    public async Task Test()
+    private List<ProfileModel> CreateProfileModels(List<GetProxyDto> getProxyDtos)
+    {
+        List<ProfileModel> profileModels = new List<ProfileModel>();
+        int i = 0;
+        foreach (var proxy in getProxyDtos)
+        {
+            ++i;
+            profileModels.Add(CreateProfile($"Profile-{proxy.Ip}-{proxy.Port}", proxy.Ip, proxy.Port, proxy.User, proxy.Password));
+        }
+
+        //profileModels.Add(CreateProfile($"DepinProfile1", "104.239.105.125", 6655, "qxibizrx", "ximfqfs33pyv"));
+        return profileModels;
+    }
+
+    public async Task StartAllByProxies(List<GetProxyDto> getProxyDtos)
     {
         _logger.LogInformation("Start Create Browser Selenium");
 
-        List<ProfileModel> profileModels = new List<ProfileModel>();
-        // profileModels.AddRange(CreateProfileModel());
+        List<ProfileModel> profileModels = CreateProfileModels(getProxyDtos);
 
         Console.WriteLine("Start StartAll");
         int x = 7;
         int y = 4;
         profileModels = GridProfilesWhenStart(x, y, profileModels, 180, 0);
-        // StartAll_Parallel(profileModels);
+        StartAll_Parallel(profileModels);
 
-        var a = StartProfile(CreateProfileModel());
-        
         Console.WriteLine("End StartAll");
         await Task.Delay(6000);
         // CloseAll();
-        _logger.LogInformation("End Create Browser Selenium");
-        await Task.Delay(2000);
+        //_logger.LogInformation("End Create Browser Selenium");
+        //await Task.Delay(2000);
+    }
+
+    public Task Test()
+    {
+       return Task.CompletedTask;
     }
 }
