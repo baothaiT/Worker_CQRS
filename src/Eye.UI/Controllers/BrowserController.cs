@@ -19,7 +19,6 @@ namespace Eye.UI.Controllers
             _proxyServce = proxyServce;
             _proxyModels = new List<ProxyModel>();
         }
-        // GET: BrowserController
         public async Task<ActionResult> Index()
         {
             return View();
@@ -27,8 +26,6 @@ namespace Eye.UI.Controllers
         [HttpPost]
         public async Task<ActionResult> StartBrowser()
         {
-
-            await _autoService.Test();
             return RedirectToAction("Index");
         }
 
@@ -45,5 +42,13 @@ namespace Eye.UI.Controllers
             _autoService.CloseAll();
             return RedirectToAction("Index");
         }
+
+        [HttpPost]
+        public async Task<ActionResult> Test()
+        {
+            await _autoService.Test();
+            return RedirectToAction("Index"); ;
+        }
+
     }
 }

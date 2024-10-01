@@ -3,7 +3,6 @@ using Eye.Contract.Share.Models;
 using Eye.Contract.Share.Static;
 using Microsoft.Extensions.Logging;
 using OpenQA.Selenium;
-using OpenQA.Selenium.BiDi.Communication;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -180,15 +179,6 @@ public class AutoService : IAutoService
         });
 
     }
-    //public void Test()
-    //{
-    //    Parallel.ForEach(_profileModels, (profile, state, index) =>
-    //    {
-    //        //_scriptAutoService.TestScript(profile);
-    //    });
-    //}
-
-
 
     private ProfileModel CreateProfile(string NameProfile, string Ip, int Port, string User, string Password)
     {
@@ -216,8 +206,6 @@ public class AutoService : IAutoService
             ++i;
             profileModels.Add(CreateProfile($"Profile-{proxy.Ip}-{proxy.Port}", proxy.Ip, proxy.Port, proxy.User, proxy.Password));
         }
-
-        //profileModels.Add(CreateProfile($"DepinProfile1", "104.239.105.125", 6655, "qxibizrx", "ximfqfs33pyv"));
         return profileModels;
     }
 
@@ -240,8 +228,11 @@ public class AutoService : IAutoService
         //await Task.Delay(2000);
     }
 
-    public Task Test()
+    public async Task Test()
     {
-       return Task.CompletedTask;
+        _logger.LogInformation("Start test -  Create Browser Selenium");
+        ProfileModel profile = CreateProfile($"DepinProfile1", "104.239.105.125", 6655, "qxibizrx", "ximfqfs33pyv");
+        //104.239.105.125	6655	qxibizrx	ximfqfs33pyv
+        await StartProfile(profile);
     }
 }

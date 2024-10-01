@@ -10,6 +10,7 @@ namespace Eye.Contract.Share.Static
     {
         public static int FullHD_Height = 1080;
         public static int FullHD_Width = 1920;
+        public static float ScaleBrowser = 1f;
         public static string Path = @"E:\Learn\Development\C#\Lab\Admin-MMO\Admin-MMO\Profile\Chrome\";
     }
 }

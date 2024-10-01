@@ -35,7 +35,7 @@ namespace Eye.Application.SeleniumServices
             // _chromeOptions.AddArgument("--headless"); // Run headless
             chromeOptions.AddUserProfilePreference("profile.default_content_settings.popups", 0); // Disable popups
             chromeOptions.AddUserProfilePreference("download.default_directory", "/path/to/download"); // Change download directory
-            chromeOptions.AddArgument("--force-device-scale-factor=0.8");
+            chromeOptions.AddArgument($"--force-device-scale-factor={ConfigurationDefaultDevice.ScaleBrowser}");
 
             chromeOptions.AddExcludedArgument("enable-automation");
             chromeOptions.AddAdditionalOption("useAutomationExtension", false);
