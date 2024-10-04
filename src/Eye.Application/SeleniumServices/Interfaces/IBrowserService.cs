@@ -12,7 +12,6 @@ namespace Eye.Application.SeleniumServices
     {
         Task<IWebDriver> CreateProfile(ProfileModel profile);
         void QuitProfile(ProfileModel profile);
-        Task GridForAllProfile(int screenWidth, int screenHeight);
         int Test_Console(int i);
     }
 }

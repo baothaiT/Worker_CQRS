@@ -57,7 +57,7 @@ public class AutoService : IAutoService
 
     public async Task GridProfiles(int screenHeight, int screenWidth)
     {
-        await _browserService.GridForAllProfile(screenHeight, screenWidth);
+        await Task.CompletedTask;
     }
 
     public List<ProfileModel> GridProfilesWhenStart(int numberWidth, int numberHeith, List<ProfileModel> profileModels)
@@ -231,8 +231,7 @@ public class AutoService : IAutoService
     public async Task Test()
     {
         _logger.LogInformation("Start test -  Create Browser Selenium");
-        ProfileModel profile = CreateProfile($"DepinProfile1", "104.239.105.125", 6655, "qxibizrx", "ximfqfs33pyv");
-        //104.239.105.125	6655	qxibizrx	ximfqfs33pyv
+        ProfileModel profile = CreateProfile($"DepinProfile1", "161.123.152.115", 6360, "qxibizrx", "ximfqfs33pyv");
         await StartProfile(profile);
     }
 }
