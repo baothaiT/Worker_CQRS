@@ -30,6 +30,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eye.UI", "src\Eye.UI\Eye.UI.csproj", "{C96C6641-3AB1-4411-A081-43484F3CDB48}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eye.Infrastructure.Chrome.Selenium", "src\Eye.Infrastructure.Chrome.Selenium\Eye.Infrastructure.Chrome.Selenium.csproj", "{A697BBA2-6315-4A7F-9543-630568C0F8E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,6 +74,10 @@ Global
 		{C96C6641-3AB1-4411-A081-43484F3CDB48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C96C6641-3AB1-4411-A081-43484F3CDB48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C96C6641-3AB1-4411-A081-43484F3CDB48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A697BBA2-6315-4A7F-9543-630568C0F8E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A697BBA2-6315-4A7F-9543-630568C0F8E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A697BBA2-6315-4A7F-9543-630568C0F8E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A697BBA2-6315-4A7F-9543-630568C0F8E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,6 +92,7 @@ Global
 		{7F72D275-F357-4B6A-8E10-852C3AAE09D5} = {55DAE63D-FE98-43FA-A7E9-56FFE1D6350B}
 		{49DBE941-5064-4AE9-AAE3-EF7A9C882068} = {55DAE63D-FE98-43FA-A7E9-56FFE1D6350B}
 		{C96C6641-3AB1-4411-A081-43484F3CDB48} = {55DAE63D-FE98-43FA-A7E9-56FFE1D6350B}
+		{A697BBA2-6315-4A7F-9543-630568C0F8E9} = {55DAE63D-FE98-43FA-A7E9-56FFE1D6350B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {833F96DD-2702-41DB-AE01-B97D76116CD0}

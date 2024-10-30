@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Eye.Application.SeleniumServices.Interfaces;
+namespace Eye.Infrastructure.Chrome.Selenium.SeleniumServices.Interfaces;
 
 public interface IConfigBrowserSerivce
 {

@@ -3,6 +3,7 @@ using Eye.Application.Services;
 using Eye.Application.SeleniumServices;
 using Eye.Application.Services.Interface;
 using Eye.Application.SeleniumServices.Interfaces;
+using Eye.Infrastructure.Chrome.Selenium.SeleniumServices;
 
 var builder = Host.CreateApplicationBuilder(args);
 

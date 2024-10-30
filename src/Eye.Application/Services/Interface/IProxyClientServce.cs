@@ -12,7 +12,7 @@ namespace Eye.Application.Services.Interface
 {
     public interface IProxyClientServce
     {
-        Task<IEnumerable<GetProxyDto>> AllProxy();
+        Task<IEnumerable<GetProxyDto>> GetAllProxy();
         Task<IEnumerable<GetProxyDto>> IsProxyWorking(IEnumerable<GetProxyDto> proxies);
         Task UpdateAllProxies(List<GetProxyDto> proxies);
         Task<IEnumerable<GetProxyDto>> GetAllProxiesByStatus(ProxyStatusEnum proxyStatus);

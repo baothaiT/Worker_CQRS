@@ -1,9 +1,6 @@
 using Eye.Application.SeleniumServices;
 using Eye.Application.SeleniumServices.Interfaces;
-using Eye.Application.Services;
-using Eye.Contract.Share.DTO;
-using Eye.Contract.Share.Models;
-using static System.Net.Mime.MediaTypeNames;
+using Eye.Contract.Share.ConfigurationScriptSelenium;
 
 namespace Eye.Worker;
 
@@ -26,9 +23,7 @@ public class Worker : BackgroundService
             if (_logger.IsEnabled(LogLevel.Information))
             {
                 _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
-                await Task.Delay(2000, stoppingToken);
-                await _processWorkerService.Job_CheckingAndUpdate_Proxy();
-                await Task.Delay(6000);
+                await _processWorkerService.Job_Processing(stoppingToken);
             }
             await Task.Delay(1000, stoppingToken);
         }

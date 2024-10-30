@@ -21,4 +21,6 @@ dotnet add package Selenium.Support
 dotnet add package Microsoft.AspNetCore.SignalR
 dotnet add package WebDriverManager 
 
+
+dotnet add reference 
 # Ref

@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Eye.Application\Eye.Application.csproj" />
+    <ProjectReference Include="..\Eye.Infrastructure.Chrome.Selenium\Eye.Infrastructure.Chrome.Selenium.csproj" />
   </ItemGroup>
 
   <ItemGroup>

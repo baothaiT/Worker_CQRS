@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Options;
 using OpenQA.Selenium.Interactions;
 
-namespace Eye.Application.SeleniumServices;
+namespace Eye.Infrastructure.Chrome.Selenium.SeleniumServices;
 
 public class BrowserService : ConfigBrowserSerivce, IBrowserService
 {

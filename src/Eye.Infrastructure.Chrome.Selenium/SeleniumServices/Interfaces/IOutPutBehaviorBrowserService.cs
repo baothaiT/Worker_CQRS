@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Eye.Application.SeleniumServices
+namespace Eye.Infrastructure.Chrome.Selenium.SeleniumServices
 {
     public interface IOutPutBehaviorBrowserService
     {

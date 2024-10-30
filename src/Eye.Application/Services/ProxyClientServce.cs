@@ -30,7 +30,7 @@ namespace Eye.Application.Services
             Componemt = "Proxy";
         }
 
-        public async Task<IEnumerable<GetProxyDto>> AllProxy()
+        public async Task<IEnumerable<GetProxyDto>> GetAllProxy()
         {
             Console.WriteLine("Start - Get All Proxies");
             var requestUrl = $"{BaseUrl}/{Componemt}";

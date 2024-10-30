@@ -8,5 +8,5 @@ namespace Eye.Application.SeleniumServices.Interfaces;
 
 public interface IProcessWorkerService
 {
-    Task Job_CheckingAndUpdate_Proxy();
+    Task Job_Processing(CancellationToken stoppingToken);
 }
