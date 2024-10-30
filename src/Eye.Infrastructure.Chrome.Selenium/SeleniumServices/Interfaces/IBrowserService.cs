@@ -11,6 +11,7 @@ namespace Eye.Infrastructure.Chrome.Selenium.SeleniumServices
     public interface IBrowserService
     {
         Task<IWebDriver> CreateProfile(ProfileModel profile);
+        Task<IWebDriver> ProcessorProfile(IWebDriver webDriver);
         void QuitProfile(ProfileModel profile);
         int Test_Console(int i);
     }

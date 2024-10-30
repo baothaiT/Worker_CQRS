@@ -30,7 +30,8 @@ public class AutoService : IAutoService
     public async Task<IWebDriver> StartProfile(ProfileModel profileModel)
     {
         Console.WriteLine($"Started Profile: " + profileModel.Name);
-        var responseDriver = await _browserService.CreateProfile(profileModel);
+        IWebDriver responseDriver = await _browserService.CreateProfile(profileModel);
+        responseDriver = await _browserService.ProcessorProfile(responseDriver);
         if(responseDriver != null)
         {
             profileModel.webDriver = responseDriver;
@@ -228,8 +229,6 @@ public class AutoService : IAutoService
         //_logger.LogInformation("End Create Browser Selenium");
         //await Task.Delay(2000);
     }
-
-    
 
     public async Task Test()
     {

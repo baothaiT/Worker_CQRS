@@ -8,7 +8,7 @@ using Eye.Infrastructure.Chrome.Selenium.SeleniumServices.BuilderPattern;
 
 namespace Eye.Infrastructure.Chrome.Selenium.SeleniumServices;
 
-public class BrowserService : ConfigBrowserSerivce, IBrowserService
+public class BrowserService : IBrowserService
 {
     public BrowserService()
     {
@@ -27,7 +27,7 @@ public class BrowserService : ConfigBrowserSerivce, IBrowserService
         .SetWindowSize(profile)
         .SetWindowPosition(profile)
         //.SetDisableWebrtc(chromeOptions)
-        .SetIgnoreCertificateErrors()
+        // .SetIgnoreCertificateErrors()
         .Build();
     
     public Task<IWebDriver> CreateProfile(ProfileModel profile)
@@ -35,13 +35,12 @@ public class BrowserService : ConfigBrowserSerivce, IBrowserService
         Console.WriteLine("Thread: " + Thread.CurrentThread.ManagedThreadId);
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions = SettingBrowserOption(chromeOptions, profile);
-        //chromeOptions.Proxy = AddProxy(profile);
 
         IWebDriver webDriver = new ChromeDriver(chromeOptions);
-        return ProcessorProfile(webDriver);
+        return Task.FromResult(webDriver);
     }
     
-    private Task<IWebDriver> ProcessorProfile(IWebDriver webDriver)
+    public Task<IWebDriver> ProcessorProfile(IWebDriver webDriver)
     {
         try
         {
