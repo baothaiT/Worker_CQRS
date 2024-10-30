@@ -3,6 +3,7 @@ using Eye.Contract.Share.Models;
 using Eye.Contract.Share.Static;
 using Microsoft.Extensions.Logging;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -228,10 +229,103 @@ public class AutoService : IAutoService
         //await Task.Delay(2000);
     }
 
+    #region Test Proxy
+    private async Task TestAddProxy()
+    {
+        string httpHost = "103.177.108.235";
+        int httpPort = 6789;
+        string username = "xwci1j2w";
+        string password = "xWcI1j2w";
+
+        var currentDirectory = System.IO.Directory.GetCurrentDirectory(); 
+        string extensionPath = Path.Combine(currentDirectory, "Chrome", "Extensions", "ImportProxyExtension");
+        _logger.LogInformation("target: " + extensionPath);
+       
+
+        // Check if necessary files are present
+        if (!IsValidExtensionFolder(extensionPath))
+        {
+            Console.WriteLine("Extension folder is missing required files: manifest.json or background.js");
+            return;
+        }
+        IWebDriver driver = InitializeChromeWithExtension(extensionPath);
+        try
+        {
+
+            var originalWindow = driver.CurrentWindowHandle;
+            Console.WriteLine("Current ", originalWindow);
+
+            string settingJs = $"saveProxyHttpSettings('{httpHost}', '{httpPort}', '{username}', '{password}');";
+
+            // Combine into the final script with event listener
+            string script = $@"document.addEventListener('DOMContentLoaded', function() {{
+                {settingJs}
+                httpProxy(); // Ensure httpProxy() is defined in the same scope
+            }});";
+
+            // Execute the script to add the event listener
+            IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
+            js.ExecuteScript(script);
+
+
+            Thread.Sleep(3000);
+            driver.SwitchTo().Window(driver.WindowHandles[1]);
+            driver.Close();
+            driver.SwitchTo().Window(driver.WindowHandles[0]);
+
+
+            Thread.Sleep(2000);
+
+            driver.Navigate().GoToUrl($"https://ident.me");
+
+            Thread.Sleep(4000);
+
+        }
+        catch (System.Exception)
+        {
+            throw;
+        }
+        finally
+        {
+            Thread.Sleep(100000);
+            driver.Quit();
+        }
+    }
+
+    public static bool IsValidExtensionFolder(string folderPath)
+    {
+        string manifestPath = Path.Combine(folderPath, "manifest.json");
+        string backgroundPath = Path.Combine(folderPath, "background.js");
+
+        return File.Exists(manifestPath) && File.Exists(backgroundPath);
+    }
+
+    public static IWebDriver InitializeChromeWithExtension(string extensionPath)
+    {
+        ChromeOptions options = new ChromeOptions();
+        var currentDirectory = System.IO.Directory.GetCurrentDirectory(); 
+        string chromeProfilePath = Path.Combine(currentDirectory, "Chrome", "Profiles");
+        options.AddArgument($"user-data-dir={chromeProfilePath}");
+        options.AddArgument("profile-directory=Profile 1");
+        options.AddArguments("--load-extension=" + extensionPath);
+        return new ChromeDriver(options);
+    }
+
+    #endregion
+
     public async Task Test()
     {
         _logger.LogInformation("Start test -  Create Browser Selenium");
-        ProfileModel profile = CreateProfile($"DepinProfile1", "161.123.152.115", 6360, "qxibizrx", "ximfqfs33pyv");
-        await StartProfile(profile);
+        // await TestAddProxy();
+        var profileTest = CreateProfile(
+            "profileTest",
+            "1",
+            1,
+            "user",
+            "pass"
+        );
+
+        await StartProfile(profileTest);
+
     }
 }

@@ -23,7 +23,9 @@ public class Worker : BackgroundService
             if (_logger.IsEnabled(LogLevel.Information))
             {
                 _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
-                await _processWorkerService.Job_Processing(stoppingToken);
+                // await _processWorkerService.Job_Processing(stoppingToken);
+
+                await _processWorkerService.Job_Test(stoppingToken);
             }
             await Task.Delay(1000, stoppingToken);
         }

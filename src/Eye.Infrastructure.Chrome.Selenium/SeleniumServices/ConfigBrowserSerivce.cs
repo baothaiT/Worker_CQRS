@@ -75,17 +75,9 @@ public abstract class ConfigBrowserSerivce
         return null;
     }
 
-    protected ChromeOptions SetIgnoreCertificateErrors(ChromeOptions chromeOptions)
-    {
-        chromeOptions.AddArgument("ignore-certificate-errors");
-        return chromeOptions;
-    }
+    
 
-    protected ChromeOptions SetDisableWebrtc(ChromeOptions chromeOptions)
-    {
-        chromeOptions.AddArgument("--disable-webrtc");
-        return chromeOptions;
-    }
+    
 
     protected ChromeOptions SetUserAgents(ChromeOptions chromeOptions, int index)
     {
@@ -93,29 +85,17 @@ public abstract class ConfigBrowserSerivce
         return chromeOptions;
     }
 
-    protected ChromeOptions SetScale(ChromeOptions chromeOptions, float scale)
-    {
-        chromeOptions.AddArgument($"--force-device-scale-factor={scale}");
-        return chromeOptions;
-    }
+    
 
+    
 
-    protected ChromeOptions SetUserDataDirs(ChromeOptions chromeOptions, ProfileModel profile)
-    {
-        chromeOptions.AddArgument($"user-data-dir={ConfigurationDefaultDevice.Path + profile.Name}");
-        return chromeOptions;
-    }
     protected ChromeOptions SetDisableBlinkFeatures_AutomationControlled(ChromeOptions chromeOptions)
     {
         chromeOptions.AddArgument("--disable-blink-features=AutomationControlled"); // Remove automation flag
         return chromeOptions;
     }
 
-    protected ChromeOptions SetWindowPosition(ChromeOptions chromeOptions, ProfileModel profile)
-    {
-        chromeOptions.AddArgument("window-position=" + profile.xPosition + "," + profile.yPosition + "");
-        return chromeOptions;
-    }
+    
 
     protected ChromeOptions SetDisableDevShmUsage(ChromeOptions chromeOptions)
     {
@@ -147,9 +127,5 @@ public abstract class ConfigBrowserSerivce
         return chromeOptions;
     }
 
-    protected ChromeOptions SetWindowSize(ChromeOptions chromeOptions, ProfileModel profile)
-    {
-        chromeOptions.AddArgument("window-size=" + profile.screenWidth + "," + profile.screenHeith + "");
-        return chromeOptions;
-    }
+    
 }

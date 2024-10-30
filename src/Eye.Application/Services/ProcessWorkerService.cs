@@ -2,16 +2,24 @@
 using Eye.Application.Services.Interface;
 using Eye.Contract.Share.DTO;
 using Eye.Contract.Share.ConfigurationScriptSelenium;
+using Eye.Infrastructure.Chrome.Selenium.SeleniumServices;
 
 namespace Eye.Application.SeleniumServices;
 
 public class ProcessWorkerService : IProcessWorkerService
 {
     private readonly IProxyClientServce _proxyClientServce;
-    public ProcessWorkerService(IProxyClientServce proxyClientServce)
+    private readonly IAutoService _autoService;
+    public ProcessWorkerService(IProxyClientServce proxyClientServce, IAutoService autoService)
     {
         _proxyClientServce = proxyClientServce;
+        _autoService = autoService;
     }
+    public async Task Job_Test(CancellationToken stoppingToken)
+    {
+        await _autoService.Test();
+    }
+
 
     public async Task Job_Processing(CancellationToken stoppingToken)
     {

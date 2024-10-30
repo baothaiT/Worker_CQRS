@@ -4,13 +4,7 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.DevTools;
 using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Extensions.Options;
-using OpenQA.Selenium.Interactions;
+using Eye.Infrastructure.Chrome.Selenium.SeleniumServices.BuilderPattern;
 
 namespace Eye.Infrastructure.Chrome.Selenium.SeleniumServices;
 
@@ -25,23 +19,23 @@ public class BrowserService : ConfigBrowserSerivce, IBrowserService
     }
 
     private ChromeOptions SettingBrowserOption(ChromeOptions chromeOptions, ProfileModel profile)
-    {
-        chromeOptions = SetUserDataDirs(chromeOptions, profile);
-        chromeOptions = SetScale(chromeOptions, ConfigurationDefaultDevice.ScaleBrowser);
-        chromeOptions = SetWindowSize(chromeOptions, profile);
-        chromeOptions = SetWindowPosition(chromeOptions, profile);
-
-        chromeOptions = SetDisableWebrtc(chromeOptions);
-        chromeOptions = SetIgnoreCertificateErrors(chromeOptions);
-        return chromeOptions;
-    }
+    => new ConfigBrowserSerivceBuilder()
+        .SetUserDataDirs(chromeOptions, profile)
+        .SetProfileDirectory(chromeOptions, profile)
+        .SetLoadExtension(chromeOptions)
+        .SetScale(chromeOptions, ConfigurationDefaultDevice.ScaleBrowser)
+        .SetWindowSize(chromeOptions, profile)
+        .SetWindowPosition(chromeOptions, profile)
+        //.SetDisableWebrtc(chromeOptions)
+        .SetIgnoreCertificateErrors(chromeOptions)
+        .Build();
     
     public Task<IWebDriver> CreateProfile(ProfileModel profile)
     {
         Console.WriteLine("Thread: " + Thread.CurrentThread.ManagedThreadId);
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions = SettingBrowserOption(chromeOptions, profile);
-        chromeOptions.Proxy = AddProxy(profile);
+        //chromeOptions.Proxy = AddProxy(profile);
 
         IWebDriver webDriver = new ChromeDriver(chromeOptions);
         return ProcessorProfile(webDriver);
@@ -53,7 +47,7 @@ public class BrowserService : ConfigBrowserSerivce, IBrowserService
         {
             webDriver.Navigate().GoToUrl(ExampleUrl.WhatIsMyIPAddress); // URL
 
-            WebDriverWait wait = new WebDriverWait(webDriver, TimeSpan.FromSeconds(30));
+            WebDriverWait wait = new WebDriverWait(webDriver, TimeSpan.FromSeconds(60));
             wait.Until(driver => driver.Title.Length > 0);
             return Task.FromResult(webDriver);
         }
