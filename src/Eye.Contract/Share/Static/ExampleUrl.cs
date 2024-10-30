@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Eye.Contract.Share.Static
+﻿namespace Eye.Contract.Share.Static
 {
     public class ExampleUrl
     {

@@ -20,14 +20,14 @@ public class BrowserService : ConfigBrowserSerivce, IBrowserService
 
     private ChromeOptions SettingBrowserOption(ChromeOptions chromeOptions, ProfileModel profile)
     => new ConfigBrowserSerivceBuilder()
-        .SetUserDataDirs(chromeOptions, profile)
-        .SetProfileDirectory(chromeOptions, profile)
-        .SetLoadExtension(chromeOptions)
-        .SetScale(chromeOptions, ConfigurationDefaultDevice.ScaleBrowser)
-        .SetWindowSize(chromeOptions, profile)
-        .SetWindowPosition(chromeOptions, profile)
+        .SetUserDataDirs()
+        .SetProfileDirectory(profile)
+        .SetLoadExtension()
+        .SetScale(ConfigurationDefaultDevice.ScaleBrowser)
+        .SetWindowSize(profile)
+        .SetWindowPosition(profile)
         //.SetDisableWebrtc(chromeOptions)
-        .SetIgnoreCertificateErrors(chromeOptions)
+        .SetIgnoreCertificateErrors()
         .Build();
     
     public Task<IWebDriver> CreateProfile(ProfileModel profile)

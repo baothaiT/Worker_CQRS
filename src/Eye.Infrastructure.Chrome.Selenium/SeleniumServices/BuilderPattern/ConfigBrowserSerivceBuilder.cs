@@ -1,5 +1,6 @@
 
 using Eye.Contract.Share.Models;
+using Eye.Contract.Share.Static;
 using OpenQA.Selenium.Chrome;
 
 namespace Eye.Infrastructure.Chrome.Selenium.SeleniumServices.BuilderPattern;
@@ -12,63 +13,63 @@ public class ConfigBrowserSerivceBuilder
     {
         _chromeOptions = new ChromeOptions();
     }
+    public ChromeOptions Build() => _chromeOptions;
 
-    public ConfigBrowserSerivceBuilder SetUserDataDirs(ChromeOptions chromeOptions, ProfileModel profile)
+    public ConfigBrowserSerivceBuilder SetUserDataDirs()
     {
-        var currentDirectory = System.IO.Directory.GetCurrentDirectory(); 
+        var currentDirectory = Directory.GetCurrentDirectory(); 
         string chromeProfilePath = Path.Combine(currentDirectory, "Chrome", "Profiles");
-        chromeOptions.AddArgument($"user-data-dir={chromeProfilePath}");
+        _chromeOptions.AddArgument($"user-data-dir={chromeProfilePath}");
         return this;
     }
 
-    public ConfigBrowserSerivceBuilder SetProfileDirectory(ChromeOptions chromeOptions, ProfileModel profile)
+    public ConfigBrowserSerivceBuilder SetProfileDirectory(ProfileModel profile)
     {
-        chromeOptions.AddArgument($"profile-directory={profile.Name}");
+        _chromeOptions.AddArgument($"profile-directory=1{profile.Name}");
         return this;
     }
 
-    public ConfigBrowserSerivceBuilder SetLoadExtension(ChromeOptions chromeOptions)
+    public ConfigBrowserSerivceBuilder SetLoadExtension()
     {
-        var currentDirectory = System.IO.Directory.GetCurrentDirectory(); 
-        string extensionPath = Path.Combine(currentDirectory, "Chrome", "Extensions", "ImportProxyExtension");
-        chromeOptions.AddArguments("--load-extension=" + extensionPath);
+        var currentDirectory = Directory.GetCurrentDirectory(); 
+        string extensionPath = Path.Combine(currentDirectory, "Chrome", "Extensions", "BaseImportProxyExtension");
+        if (!FileService.IsValidFile(extensionPath, ExtensionStatics.ManifestJsonName) && !FileService.IsValidFile(extensionPath, ExtensionStatics.BackgroundJsonName))
+        {
+            Console.WriteLine("Extension folder is missing required files: manifest.json or background.js");
+            return this;
+        }
+        _chromeOptions.AddArguments("--load-extension=" + extensionPath);
         return this;
     }
 
-    public ConfigBrowserSerivceBuilder SetScale(ChromeOptions chromeOptions, float scale)
+    public ConfigBrowserSerivceBuilder SetScale(float scale)
     {
-        chromeOptions.AddArgument($"--force-device-scale-factor={scale}");
+        _chromeOptions.AddArgument($"--force-device-scale-factor={scale}");
         return this;
     }
 
-    public ConfigBrowserSerivceBuilder SetWindowSize(ChromeOptions chromeOptions, ProfileModel profile)
+    public ConfigBrowserSerivceBuilder SetWindowSize(ProfileModel profile)
     {
-        chromeOptions.AddArgument("window-size=" + profile.screenWidth + "," + profile.screenHeith + "");
+        _chromeOptions.AddArgument("window-size=" + profile.screenWidth + "," + profile.screenHeith + "");
         return this;
     }
 
-    public ConfigBrowserSerivceBuilder SetWindowPosition(ChromeOptions chromeOptions, ProfileModel profile)
+    public ConfigBrowserSerivceBuilder SetWindowPosition(ProfileModel profile)
     {
-        chromeOptions.AddArgument("window-position=" + profile.xPosition + "," + profile.yPosition + "");
+        _chromeOptions.AddArgument("window-position=" + profile.xPosition + "," + profile.yPosition + "");
         return this;
     }
 
-    public ConfigBrowserSerivceBuilder SetDisableWebrtc(ChromeOptions chromeOptions)
+    public ConfigBrowserSerivceBuilder SetDisableWebrtc()
     {
-        chromeOptions.AddArgument("--disable-webrtc");
+        _chromeOptions.AddArgument("--disable-webrtc");
         return this;
     }
 
-    public ConfigBrowserSerivceBuilder SetIgnoreCertificateErrors(ChromeOptions chromeOptions)
+    public ConfigBrowserSerivceBuilder SetIgnoreCertificateErrors()
     {
-        chromeOptions.AddArgument("ignore-certificate-errors");
+        _chromeOptions.AddArgument("ignore-certificate-errors");
         return this;
-    }
-
-    public ChromeOptions Build()
-    {
-        return _chromeOptions;
     }
     
-
 }

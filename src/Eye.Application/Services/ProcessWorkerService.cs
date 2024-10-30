@@ -17,7 +17,9 @@ public class ProcessWorkerService : IProcessWorkerService
     }
     public async Task Job_Test(CancellationToken stoppingToken)
     {
+        await Task.Delay(ConfigurationScriptSelenium.Start_CheckingAndUpdate_Proxy, stoppingToken);
         await _autoService.Test();
+        await Task.Delay(ConfigurationScriptSelenium.End_CheckingAndUpdate_Proxy);
     }
 
 
